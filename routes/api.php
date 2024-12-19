@@ -29,4 +29,5 @@ Route::group([
 );
 
 Route::post('/add', [ItemController::class, 'store']);
+Route::get('/items', [ItemController::class, 'get']);
 

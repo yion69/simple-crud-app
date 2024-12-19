@@ -44,4 +44,10 @@ class ItemController extends Controller
             'item' => $item,
         ], 201);
     }   
+    public function get () {
+        $items = Item::all();
+        return response()->json([
+            'items' => $items,
+        ]);
+    }
 }
