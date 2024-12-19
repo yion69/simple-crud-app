@@ -30,4 +30,6 @@ Route::group([
 
 Route::post('/add', [ItemController::class, 'store']);
 Route::get('/items', [ItemController::class, 'get']);
+Route::delete('/items/{id}', [ItemController::class, 'delete']);
+
 

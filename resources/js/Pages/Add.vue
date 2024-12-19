@@ -73,6 +73,8 @@
         try {
             const response = await axios.post('http://localhost:8000/api/add',itemData)
             console.log(response.data);
+
+            router.visit('/panel');
         } catch (error) {
             console.log(error);
         }
