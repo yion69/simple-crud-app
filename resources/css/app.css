@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@ckeditor/ckeditor5-build-classic/build/styles.css';
+
+[x-cloak] {
+    display: none;
+}
